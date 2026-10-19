@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { useId } from 'react';
 
 interface FontSelectorProps {
   label: string;
@@ -8,17 +8,12 @@ interface FontSelectorProps {
 }
 
 const defaultFontOptions = [
-  { label: "Inter", value: "Inter" },
-  { label: "Playfair Display", value: "Playfair Display" },
-  { label: "JetBrains Mono", value: "JetBrains Mono" },
+  { label: 'Inter', value: 'Inter' },
+  { label: 'Playfair Display', value: 'Playfair Display' },
+  { label: 'JetBrains Mono', value: 'JetBrains Mono' },
 ];
 
-export function FontSelector({
-  label,
-  value,
-  onChange,
-  options,
-}: FontSelectorProps) {
+export function FontSelector({ label, value, onChange, options }: FontSelectorProps) {
   const id = useId();
   const opts = options || defaultFontOptions;
 

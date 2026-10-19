@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { useId } from 'react';
 
 interface ColorPickerProps {
   label: string;
@@ -10,7 +10,7 @@ export function ColorPicker({ label, value, onChange }: ColorPickerProps) {
   const id = useId();
   const colorId = `${id}-color`;
   const hexId = `${id}-hex`;
-  const displayValue = value.startsWith("#") ? value : `#${value}`;
+  const displayValue = value.startsWith('#') ? value : `#${value}`;
 
   return (
     <div className="editor-field">

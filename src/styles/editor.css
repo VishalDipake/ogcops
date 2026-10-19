@@ -549,9 +549,7 @@
   cursor: pointer;
   box-shadow: var(--shadow-sm);
 }
-
 /* Upload Button */
-
 .editor-file-input {
   position: absolute;
   width: 1px;
@@ -565,10 +563,9 @@
 }
 
 .editor-file-input:focus-visible + .editor-upload-btn {
-  outline: 2px solid var(--border-strong);
-  outline-offset: 3px;
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
 }
-
 
 .editor-upload-btn {
   display: inline-flex;

@@ -1,4 +1,4 @@
-import { useCallback, useId } from "react";
+import { useCallback, useId } from 'react';
 
 interface ImageUploaderProps {
   label: string;
@@ -18,13 +18,13 @@ export function ImageUploader({ label, value, onChange }: ImageUploaderProps) {
 
       const reader = new FileReader();
       reader.onload = () => {
-        if (typeof reader.result === "string") {
+        if (typeof reader.result === 'string') {
           onChange(reader.result);
         }
       };
       reader.readAsDataURL(file);
     },
-    [onChange],
+    [onChange]
   );
 
   return (

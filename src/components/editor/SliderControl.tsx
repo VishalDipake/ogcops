@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { useId } from 'react';
 
 interface SliderControlProps {
   label: string;
@@ -8,13 +8,7 @@ interface SliderControlProps {
   max?: number;
 }
 
-export function SliderControl({
-  label,
-  value,
-  onChange,
-  min = 0,
-  max = 100,
-}: SliderControlProps) {
+export function SliderControl({ label, value, onChange, min = 0, max = 100 }: SliderControlProps) {
   const id = useId();
 
   return (
